@@ -5,9 +5,16 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate","#page7",function(){
+  $("p").on("swipe",function(){
+	      $("span").text("Brasil desde sus inicios ocupó su indumentaria conformada por camiseta, pantalón y medias de color blanco hasta el Mundial de 1950.50 Después del famoso «Maracanazo», cambió su uniforme por el actual haciendo su debut en el Mundial de Suiza 1954 con la goleada de 5:0 frente a México en el Stade des Charmilles en la ciudad de Ginebra. El primer partido con la nueva indumentaria había sido en Maracaná el 14 de marzo de 1954, frente a Chile, con victoria 1-0.El creador de la indumentaria actual es el escritor y diseñador gráfico brasileño Aldyr García Schlee.En 1953, a los 19 años y con experiencia como diseñador y caricaturista en los periódicos de la ciudad de Pelotas, Río Grande del Sur, fue el vencedor entre 301 participantes en un concurso organizado por el diario Correio da Manhã de Río de Janeiro y auspiciado por la extinta Confederación Brasileña de Deportes (CBD), para escoger el nuevo uniforme de la selección. Las bases del concurso exigían que el nuevo diseño debía incluir los cuatro colores de la bandera de Brasil.") ;
+  });                       
+  });
+  </script>
 
 </head> 
-<body> 
+<body>
 
 <div data-role="page" id="page">
 	<div data-role="header">
@@ -18,8 +25,10 @@
 <ul data-role="listview">
 	  <li><a href="#page2">Historia</a></li>
       <li><a href="#page3">Jugadores</a></li>
-	  <li><a href="#page4">Página cuatro</a></li>
-     <li><a href="#page5">Página cinco</a></li>
+	  <li><a href="#page4">Estadio</a></li>
+     <li><a href="#page5">Imagenes</a></li>
+     <li><a href="#page6">Busqueda por nombre</a></li>
+     <li><a href="#page7">Uniformes</a></li>
 		</ul>		
 	</div>
 	
@@ -51,7 +60,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 		<h1>Jugadores</h1>
 	</div>
 	<div data-role="content" data-theme="c" >
-    
+    <a href="#page6"class="ui-btn">Busqueda por Nombre </a>
     	<table data-role="table" data-mode="columntoggle" class="ui-responsive" data-column-btn-text="Boton" id="TABLAEMPLE">
         	<thead>
 	        	<tr>
@@ -181,16 +190,24 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 </div>
 
 <div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Página cuatro</h1>
-	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
-</div>
+  <div data-role="panel" id="myPanel"> 
+    <h1>Estadio</h1>
+    <p>La selección brasileña no tiene un estadio nacional de origen al igual que muchos otros equipos y selecciones nacionales. Por tal motivo la selección brasileña juega sus partidos amistosos y clasificatorios en diferentes escenarios. Entre éstos se encuentran el mítico Estadio Maracaná que fue sede de la Copa Mundial de Fútbol de 1950 celebrada en Brasil. El estadio Olímpico João Havelange donde la selección brasileña disputó partidos de eliminatorias para el Mundial de 2010.44 Los estadios Morumbi, Mineirão, Beira-Rio, Mané Garrincha entre otros, son utilizados igualmente por la selección. Sin embargo, la selección brasileña disputó encuentros oficiales para las eliminatorias del mundial de fútbol Alemania 2006 en estadios más pequeños como el estadio Vivaldo Lima en Manaos,45 el estadio Pinheirao en Curitiba,46 el estadio Rey Pelé en Maceió,47 el estadio Serra Dorada en Goiânia48 y el estadio Mangueirão en Belém.</p>
+    <a href="page_" data-rel="close" class="ui-btn">cerrar </a>
+  </div> 
+
+  <div data-role="header">
+    <h1>Estadio</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <img src="estadio.jpg" width="300" height="200">
+<p>Click para mostrar Estadio</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Panel</a>
+  </div>
+
+</div> 
+
 <div data-role="page" id="page5">
 	<div data-role="header">
     <div id="page" data-role="main" class="ui-content">
@@ -210,7 +227,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
        </div>
   </div>
   
-		<h1>Página cuatro</h1>
+		<h1>Página cinco</h1>
 	</div>
 	<div data-role="content">	
 		
@@ -220,6 +237,50 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 		<h4>Pie de página</h4>
 	</div>
 </div>
+
+
+<div data-role="page" id="page6">
+  <div data-role="main" class="ui-content">
+    <h2>Jugadores Brazilenos</h2>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="#">Neymar</a></li>
+      <li><a href="#">Daniel Alves</a></li>
+      <li><a href="#">David Luiz</a></li>
+      <li><a href="#">Thiago Silva</a></li>
+      <li><a href="#">Hulk</a></li>
+      <li><a href="#">Marcelo</a></li>
+      <li><a href="#">Fernandinho</a></li>
+      <li><a href="#">Oscar Junior</a></li>
+      <li><a href="#">Júlio Cesar</a></li>
+      <li><a href="#">Willian</a></li>
+      <li><a href="#">Dante</a></li>
+      <li><a href="#">Ronaldinho</a></li>
+      <li><a href="#">Kaka</a></li>
+      <li><a href="#">Bernard</a></li>
+    </ul>
+  </div>
+</div> 
+
+
+<div data-role="page" id="page7">
+  <div data-role="header">
+    <h1>Uniformes</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Desliza el dedo sobre el cuadro para mostrar historia del uniforme</p>
+    <p style="border:1px solid black;height:200px;width:200px;"></p>
+    <p><span style="color:blue"></span></p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Uniformes</h1>
+  </div>
+</div> 
+
 
 </body>
 </html>
