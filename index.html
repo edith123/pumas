@@ -3,6 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<style type="text/css">
+#page div ul li a {
+	color: #0C0;
+}
+</style>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -30,7 +35,7 @@ $(document).on("pagecreate","#page7",function(){
      <li><a href="#page5">Imagenes</a></li>
      <li><a href="#page6">Busqueda por nombre</a></li>
      <li><a href="#page7">Uniformes</a></li>
-     <li><a href="#page8">Estadistica</a></li>
+     <li><a href="#page8">Foto oficial</a></li>
 		</ul>		
 	</div>
 	
@@ -197,18 +202,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 
 
 <div data-role="page" id="page4">
-<div data-role="header">
-    <h1>Estadio</h1>
-    <a data-direction="reverse" data-rel="back">Regresar</a>
-  </div>
 
-  
-  
-  <div data-role="main" class="ui-content">
-  <img src="estadio.jpg" width="300" height="200">
-<p>Click para mostrar Estadio</p>
-    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Panel</a>
- 
   <div data-role="panel" id="myPanel"> 
     <h1>Estadio</h1>
     <p>La selección brasileña no tiene un estadio nacional de origen al igual que muchos otros equipos y selecciones nacionales. Por tal motivo la selección brasileña juega sus partidos amistosos y clasificatorios en diferentes escenarios. Entre éstos se encuentran el mítico Estadio Maracaná que fue sede de la Copa Mundial de Fútbol de 1950 celebrada en Brasil. El estadio Olímpico João Havelange donde la selección brasileña disputó partidos de eliminatorias para el Mundial de 2010.44 Los estadios Morumbi, Mineirão, Beira-Rio, Mané Garrincha entre otros, son utilizados igualmente por la selección. Sin embargo, la selección brasileña disputó encuentros oficiales para las eliminatorias del mundial de fútbol Alemania 2006 en estadios más pequeños como el estadio Vivaldo Lima en Manaos,45 el estadio Pinheirao en Curitiba,46 el estadio Rey Pelé en Maceió,47 el estadio Serra Dorada en Goiânia48 y el estadio Mangueirão en Belém.</p>
@@ -216,9 +210,17 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
   </div> 
 
   
-
+  <div data-role="header">
+    <h1>ESTADIO</h1>
+  </div>  
+  
+  <div data-role="main" class="ui-content">
+  <img src="estadio.jpg" width="300" height="200">
+<p>Click para mostrar Estadio</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Panel</a>
+ </div>
 </div> 
-</div>
+
 
 <div data-role="page" id="page5">
 	<div data-role="header">
@@ -299,30 +301,29 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 
 <div data-role="page" id=page8>
   <div data-role="header">
-    <h1>Header</h1>
+    <h1>Foto oficial</h1>
     <a data-direction="reverse" data-rel="back">Regresar</a>
        
   </div>
   
 
   <div data-role="main" class="ui-content">
-    <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Abrir un dialogo</a>
+    <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Abrir foto</a>
 
    </div>
    
     <div data-role="popup" id="myPopupDialog">
       <div data-role="header">
-        <h1>Header</h1>
+        <h1>Foto oficial</h1>
       </div>
 
       <div data-role="main" class="ui-content">
-        <h2>HOLA</h2>
-        <p>ALUMNOS!</p>
+        <img src="oficial.jpeg" width="307" height="164"> 
         <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Regresar</a>
       </div>
 
       <div data-role="footer">
-        <h1>Footer</h1>
+        <h1>Equipo Favorito</h1>
       </div>
     </div>
   </div>
