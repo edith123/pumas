@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 <script>
 $(document).on("pagecreate","#page7",function(){
   $("p").on("swipe",function(){
@@ -29,6 +30,7 @@ $(document).on("pagecreate","#page7",function(){
      <li><a href="#page5">Imagenes</a></li>
      <li><a href="#page6">Busqueda por nombre</a></li>
      <li><a href="#page7">Uniformes</a></li>
+     <li><a href="#page8">Estadistica</a></li>
 		</ul>		
 	</div>
 	
@@ -36,6 +38,9 @@ $(document).on("pagecreate","#page7",function(){
 		<h4>Equipo favorito</h4>
 	</div>
 </div>
+
+
+
 
 <div data-role="page" id="page2">
 	<div data-role="header">
@@ -54,9 +59,12 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 	</div>
 </div>
 
+
+
 <div data-role="page" id="page3">
 	<div data-role="header">
     <a data-direction="reverse" data-rel="back">Regresar</a>
+    
 		<h1>Jugadores</h1>
 	</div>
 	<div data-role="content" data-theme="c" >
@@ -80,7 +88,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
          	<tbody>
 				<tr>
                 
-					<td><a href="#page5">Neymar</a></td>
+					<td>Neymar</td>
 	                <td>Delantero</td>
                     <td>23</td>
                     <td>65 kg</td>
@@ -171,7 +179,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 		            
 				</tr>             
                 <tr>
-					<td><a href="bernard.jpg">Bernard</a></td>
+					<td>Bernard</td>
             	    <td>Centro</td>
 	            	<td>22</td>
 		            <td>60 kg</td>
@@ -179,62 +187,67 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 				</tr>                                         
 			</tbody>                     
 	    </table>                                 
-	</div>    
-</div>
-	
-		Contenido		
-	</div>
+	</div>   
+		
 <div data-role="footer">
 		<h4>Equipo Favorito</h4>
 	</div>
 </div>
 
+
+
 <div data-role="page" id="page4">
+<div data-role="header">
+    <h1>Estadio</h1>
+    <a data-direction="reverse" data-rel="back">Regresar</a>
+  </div>
+
+  
+  
+  <div data-role="main" class="ui-content">
+  <img src="estadio.jpg" width="300" height="200">
+<p>Click para mostrar Estadio</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Panel</a>
+ 
   <div data-role="panel" id="myPanel"> 
     <h1>Estadio</h1>
     <p>La selección brasileña no tiene un estadio nacional de origen al igual que muchos otros equipos y selecciones nacionales. Por tal motivo la selección brasileña juega sus partidos amistosos y clasificatorios en diferentes escenarios. Entre éstos se encuentran el mítico Estadio Maracaná que fue sede de la Copa Mundial de Fútbol de 1950 celebrada en Brasil. El estadio Olímpico João Havelange donde la selección brasileña disputó partidos de eliminatorias para el Mundial de 2010.44 Los estadios Morumbi, Mineirão, Beira-Rio, Mané Garrincha entre otros, son utilizados igualmente por la selección. Sin embargo, la selección brasileña disputó encuentros oficiales para las eliminatorias del mundial de fútbol Alemania 2006 en estadios más pequeños como el estadio Vivaldo Lima en Manaos,45 el estadio Pinheirao en Curitiba,46 el estadio Rey Pelé en Maceió,47 el estadio Serra Dorada en Goiânia48 y el estadio Mangueirão en Belém.</p>
     <a href="page_" data-rel="close" class="ui-btn">cerrar </a>
   </div> 
 
-  <div data-role="header">
-    <h1>Estadio</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-  <img src="estadio.jpg" width="300" height="200">
-<p>Click para mostrar Estadio</p>
-    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Panel</a>
-  </div>
+  
 
 </div> 
+</div>
 
 <div data-role="page" id="page5">
 	<div data-role="header">
-    <div id="page" data-role="main" class="ui-content">
+    <a data-direction="reverse" data-rel="back">Regresar</a>
+    <hi> IMAGENES JUGADORES </h1>
+    </div>
+    
+    <div id="page5" data-role="main" class="ui-content">
     <p>Click en imagen</p>
     
     <a href="#myPopup" data-rel="popup" data-position-to="window">
-    <img src="neymar.jpg" alt="Skaret View" style="width:200px;"></a>
-<img src="bernard.jpg" alt="Skaret View" style="width:200px;"></a>
+    <img src="neymar.jpg" alt="Skaret View" style="width:100px;">
+<img src="bernard.jpg" alt="Skaret View" style="width:100px;">
+    </a>
+    
     <div data-role="popup" id="myPopup">
       <p>La imagen!</p> 
-      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-      <img src="neymar.jpg" style="width:800px;height:400px;" alt="Skaret View">
-      <img src="bernard.jpg" style="width:800px;height:400px;" alt="Skaret View">
-      <img src="david luis.jpg" width="200" height="268">
-      <img src="fernandino.jpg" width="200" height="268">
+      <a href="#page5" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <a>
+      <img src="neymar.jpg" style="width:600px;height:400px;" alt="Skaret View"></a>
+      <a>
+      <img src="bernard.jpg" style="width:600px;height:400px;" alt="Skaret View"></a>
       
-       </div>
-  </div>
+      
+      </div>
+    </div>
   
-		<h1>Página cinco</h1>
-	</div>
-	<div data-role="content">	
-		
-        Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
+  	<div data-role="footer"data-position="fixed">
+		<h4>Equipo Favorito</h4>
 	</div>
 </div>
 
@@ -242,6 +255,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 <div data-role="page" id="page6">
   <div data-role="main" class="ui-content">
     <h2>Jugadores Brazilenos</h2>
+    <a data-direction="reverse" data-rel="back">Regresar</a>
     <form class="ui-filterable">
       <input id="myFilter" data-type="search">
     </form>
@@ -268,6 +282,7 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
 <div data-role="page" id="page7">
   <div data-role="header">
     <h1>Uniformes</h1>
+    <a data-direction="reverse" data-rel="back">Regresar</a>
   </div>
 
   <div data-role="main" class="ui-content">
@@ -280,6 +295,39 @@ Ha sido la única selección en el mundo en obtener 12 veces el Premio al equipo
     <h1>Uniformes</h1>
   </div>
 </div> 
+
+
+<div data-role="page" id=page8>
+  <div data-role="header">
+    <h1>Header</h1>
+    <a data-direction="reverse" data-rel="back">Regresar</a>
+       
+  </div>
+  
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Abrir un dialogo</a>
+
+   </div>
+   
+    <div data-role="popup" id="myPopupDialog">
+      <div data-role="header">
+        <h1>Header</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h2>HOLA</h2>
+        <p>ALUMNOS!</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Regresar</a>
+      </div>
+
+      <div data-role="footer">
+        <h1>Footer</h1>
+      </div>
+    </div>
+  </div>
+
+  
 
 
 </body>
